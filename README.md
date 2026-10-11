@@ -12,4 +12,13 @@ This repository is not only for tracking my progress — it is also designed to 
 - Each solution aims to be readable and well-commented so beginners can follow along.
 - Feel free to use the code as a learning resource or as a starting point for your own practice.
 
+## How to Compile and Run
+
+From the repository root:
+
+```bash
+javac src/Main.java
+java -cp src Main
+```
+
 Happy coding!
