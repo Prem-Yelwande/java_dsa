@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello and welcome!");
+        System.out.println("Hello and welcome to Java DSA practice!");
 
+        // Example: iterative binary search on a sorted array
         int[] sorted = {2, 4, 7, 9, 15};
         int target = 9;
         int index = binarySearch(sorted, target);
