@@ -21,4 +21,6 @@ javac src/Main.java
 java -cp src Main
 ```
 
+If you add more `.java` files later, compile them all with `javac src/*.java` (or specify each file) and run with the same classpath.
+
 Happy coding!
