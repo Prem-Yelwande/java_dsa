@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello and welcome to Java DSA practice!");
 
-        // Example: iterative binary search on a sorted array
+        // Example: iterative binary search on a sorted array (O(log n) time)
         int[] sorted = {2, 4, 7, 9, 15};
         int target = 9;
         int index = binarySearch(sorted, target);
@@ -11,6 +11,7 @@ public class Main {
 
     /**
      * Iterative binary search on an ascending array.
+     * Time complexity: O(log n). Space complexity: O(1).
      * Returns the index of target, or -1 when the value is absent or the array is unusable.
      */
     static int binarySearch(int[] values, int target) {
