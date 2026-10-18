@@ -6,13 +6,24 @@ public class Main {
         int[] sorted = {2, 4, 7, 9, 15};
         int target = 9;
         int index = binarySearch(sorted, target);
-        System.out.println("index of " + target + " = " + index);
+        if (index >= 0) {
+            System.out.println("index of " + target + " = " + index);
+        } else {
+            System.out.println(target + " not found in the array");
+        }
+
+        // Try a missing value
+        int missing = 10;
+        int missingIndex = binarySearch(sorted, missing);
+        System.out.println(missing + (missingIndex >= 0 ? " found at " + missingIndex : " not found"));
     }
 
     /**
      * Iterative binary search on an ascending array.
      * Time complexity: O(log n). Space complexity: O(1).
      * Returns the index of target, or -1 when the value is absent or the array is unusable.
+     *
+     * Assumes the input array is sorted in ascending order.
      */
     static int binarySearch(int[] values, int target) {
         if (values == null || values.length == 0) {
@@ -22,7 +33,7 @@ public class Main {
         int left = 0;
         int right = values.length - 1;
         while (left <= right) {
-            int mid = left + (right - left) / 2;
+            int mid = left + (right - left) / 2; // avoid overflow
             if (values[mid] == target) {
                 return mid;
             }
