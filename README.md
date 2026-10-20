@@ -12,6 +12,17 @@ This repository is not only for tracking my progress — it is also designed to 
 - Each solution aims to be readable and well-commented so beginners can follow along.
 - Feel free to use the code as a learning resource or as a starting point for your own practice.
 
+## Suggested Structure
+
+When adding new problems, consider organizing them as:
+- `src/arrays/`
+- `src/strings/`
+- `src/trees/`
+- `src/graphs/`
+- `src/dynamic_programming/`
+
+Keep class names descriptive (e.g. `TwoSum.java`, `BinaryTreeTraversal.java`).
+
 ## How to Compile and Run
 
 From the repository root:
@@ -22,5 +33,11 @@ java -cp src Main
 ```
 
 If you add more `.java` files later, compile them all with `javac src/*.java` (or specify each file) and run with the same classpath.
+
+## Tips for Practice
+
+- Start with easy problems and gradually move to medium/hard.
+- Write your own test cases before looking at the solution.
+- Comment the time and space complexity of each solution.
 
 Happy coding!
