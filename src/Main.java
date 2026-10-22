@@ -23,7 +23,9 @@ public class Main {
      * Time complexity: O(log n). Space complexity: O(1).
      * Returns the index of target, or -1 when the value is absent or the array is unusable.
      *
-     * Assumes the input array is sorted in ascending order.
+     * Assumes the input array is sorted in ascending order and contains no duplicates.
+     * Handles null or empty arrays by returning -1.
+     * Mid calculation uses left + (right - left) / 2 to avoid integer overflow.
      */
     static int binarySearch(int[] values, int target) {
         if (values == null || values.length == 0) {
