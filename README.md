@@ -39,5 +39,12 @@ If you add more `.java` files later, compile them all with `javac src/*.java` (o
 - Start with easy problems and gradually move to medium/hard.
 - Write your own test cases before looking at the solution.
 - Comment the time and space complexity of each solution.
+- Practice consistently; even 1-2 problems a day builds strong fundamentals.
+
+## Resources
+
+- [LeetCode](https://leetcode.com/) — excellent for practice problems.
+- [GeeksforGeeks](https://www.geeksforgeeks.org/) — detailed explanations and Java examples.
+- [Java Documentation](https://docs.oracle.com/en/java/) — official language reference.
 
 Happy coding!
