@@ -34,12 +34,15 @@ java -cp src Main
 
 If you add more `.java` files later, compile them all with `javac src/*.java` (or specify each file) and run with the same classpath.
 
+**Tip:** For a better development experience, use an IDE such as IntelliJ IDEA (Community Edition is free) which provides excellent Java support, code completion, and debugging.
+
 ## Tips for Practice
 
 - Start with easy problems and gradually move to medium/hard.
 - Write your own test cases before looking at the solution.
 - Comment the time and space complexity of each solution.
 - Practice consistently; even 1-2 problems a day builds strong fundamentals.
+- Review edge cases carefully (empty inputs, single elements, large values).
 
 ## Resources
 
