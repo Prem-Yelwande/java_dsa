@@ -16,6 +16,10 @@ public class Main {
         int missing = 10;
         int missingIndex = binarySearch(sorted, missing);
         System.out.println(missing + (missingIndex >= 0 ? " found at " + missingIndex : " not found"));
+
+        // Edge case: empty array
+        int[] empty = {};
+        System.out.println("Empty array search result: " + binarySearch(empty, 5));
     }
 
     /**
@@ -26,6 +30,7 @@ public class Main {
      * Assumes the input array is sorted in ascending order and contains no duplicates.
      * Handles null or empty arrays by returning -1.
      * Mid calculation uses left + (right - left) / 2 to avoid integer overflow.
+     * Edge cases covered: null, empty, missing value, single-element array.
      */
     static int binarySearch(int[] values, int target) {
         if (values == null || values.length == 0) {
