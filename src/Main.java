@@ -17,9 +17,10 @@ public class Main {
         int missingIndex = binarySearch(sorted, missing);
         System.out.println(missing + (missingIndex >= 0 ? " found at " + missingIndex : " not found"));
 
-        // Edge case: empty array
+        // Edge case: empty array — should return -1
         int[] empty = {};
-        System.out.println("Empty array search result: " + binarySearch(empty, 5));
+        int emptyResult = binarySearch(empty, 5);
+        System.out.println("Empty array search result: " + emptyResult + " (expected -1)");
     }
 
     /**
