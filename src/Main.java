@@ -21,6 +21,13 @@ public class Main {
         int[] empty = {};
         int emptyResult = binarySearch(empty, 5);
         System.out.println("Empty array search result: " + emptyResult + " (expected -1)");
+
+        // Edge case: single-element array
+        int[] single = {42};
+        int singleHit = binarySearch(single, 42);
+        int singleMiss = binarySearch(single, 7);
+        System.out.println("Single-element hit: " + singleHit + " (expected 0)");
+        System.out.println("Single-element miss: " + singleMiss + " (expected -1)");
     }
 
     /**
