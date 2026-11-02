@@ -11,7 +11,14 @@ public class day1 {
 
         System.out.print("Enter the radius: ");
         double radius = sc.nextDouble();
-        // Note: For production code, add validation to ensure radius > 0.
+
+        // Basic validation: radius should be positive
+        if (radius <= 0) {
+            System.out.println("Error: Radius must be a positive number.");
+            sc.close();
+            return;
+        }
+
         double circumference = 2 * Math.PI * radius;
         System.out.println("Circumference: " + circumference);
 
