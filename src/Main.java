@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello and welcome to Java DSA practice!");
 
-        // Example: iterative binary search on a sorted array (O(log n) time)
+        // Example: iterative binary search on a sorted array (O(log n) time, O(1) space)
         int[] sorted = {2, 4, 7, 9, 15};
         int target = 9;
         int index = binarySearch(sorted, target);
@@ -28,6 +28,8 @@ public class Main {
         int singleMiss = binarySearch(single, 7);
         System.out.println("Single-element hit: " + singleHit + " (expected 0)");
         System.out.println("Single-element miss: " + singleMiss + " (expected -1)");
+
+        System.out.println("Binary search: O(log n) time, O(1) space — ideal for large sorted arrays.");
     }
 
     /**
