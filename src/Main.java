@@ -41,6 +41,8 @@ public class Main {
      * Handles null or empty arrays by returning -1.
      * Mid calculation uses left + (right - left) / 2 to avoid integer overflow.
      * Edge cases covered: null, empty, missing value, single-element array.
+     *
+     * Note: For unsorted input the result is undefined. Callers must guarantee sorted order.
      */
     static int binarySearch(int[] values, int target) {
         if (values == null || values.length == 0) {
