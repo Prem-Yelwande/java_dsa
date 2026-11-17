@@ -34,6 +34,13 @@ java -cp src Main
 
 If you add more `.java` files later, compile them all with `javac src/*.java` (or specify each file) and run with the same classpath.
 
+To compile and run a specific file that contains its own `main` method (for example a problem under `src/arrays/TwoSum.java`):
+
+```bash
+javac src/arrays/TwoSum.java
+java -cp src arrays.TwoSum   # adjust package/class name as needed
+```
+
 **Tip:** For a better development experience, use an IDE such as IntelliJ IDEA (Community Edition is free) which provides excellent Java support, code completion, and debugging.
 
 ## Tips for Practice
