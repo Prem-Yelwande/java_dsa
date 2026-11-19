@@ -29,6 +29,10 @@ public class Main {
         System.out.println("Single-element hit: " + singleHit + " (expected 0)");
         System.out.println("Single-element miss: " + singleMiss + " (expected -1)");
 
+        // Edge case: null array (handled safely)
+        int nullResult = binarySearch(null, 1);
+        System.out.println("Null array search result: " + nullResult + " (expected -1)");
+
         System.out.println("Binary search: O(log n) time, O(1) space — ideal for large sorted arrays.");
     }
 
@@ -45,6 +49,7 @@ public class Main {
      * Note: For unsorted input the result is undefined. Callers must guarantee sorted order.
      */
     static int binarySearch(int[] values, int target) {
+        // Guard against null or empty input early to avoid NPE and unnecessary work.
         if (values == null || values.length == 0) {
             return -1;
         }
@@ -52,7 +57,8 @@ public class Main {
         int left = 0;
         int right = values.length - 1;
         while (left <= right) {
-            int mid = left + (right - left) / 2; // avoid overflow
+            // Overflow-safe midpoint calculation
+            int mid = left + (right - left) / 2;
             if (values[mid] == target) {
                 return mid;
             }
