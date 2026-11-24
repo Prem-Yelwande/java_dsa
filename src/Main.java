@@ -47,6 +47,8 @@ public class Main {
      * Edge cases covered: null, empty, missing value, single-element array.
      *
      * Note: For unsorted input the result is undefined. Callers must guarantee sorted order.
+     * Tip: for large arrays an early bounds check (target < values[0] || target > values[last])
+     * can avoid the loop entirely when the target is clearly outside the range.
      */
     static int binarySearch(int[] values, int target) {
         // Guard against null or empty input early to avoid NPE and unnecessary work.
