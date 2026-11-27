@@ -47,9 +47,10 @@ java -cp src arrays.TwoSum   # adjust package/class name as needed
 
 - Start with easy problems and gradually move to medium/hard.
 - Write your own test cases before looking at the solution.
-- Comment the time and space complexity of each solution.
+- Comment the time and space complexity of each solution (e.g. O(n) time, O(1) space).
 - Practice consistently; even 1-2 problems a day builds strong fundamentals.
 - Review edge cases carefully (empty inputs, single elements, large values).
+- After solving, try to optimize further or explore alternative approaches.
 
 ## Resources
 
